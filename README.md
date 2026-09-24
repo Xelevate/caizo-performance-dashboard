@@ -75,3 +75,9 @@ The illustrative offer changes one shawarma (EGP 90) to two for EGP 170. Assumed
 Only explicitly attributed offer events count; normal multiple-item orders do not. Offers/acceptances include all order statuses; revenue, costs, units and contribution count only completed accepted upsells. The final item lines are repriced to EGP 85 each and reconcile with final order values across all dashboard views.
 
 Future form fields: offer ID, agent ID, offer proposed (boolean), customer accepted (boolean), original basket snapshot/value, final basket snapshot/value after offer discounts, incremental units and incremental variable cost. Preserve order status and link the event to the order. Do not infer upselling from basket size alone. `orders[].upsell` stores `offered`, `accepted`, `offerId`, `originalValue`, `finalValue`, `extraRevenue`, `extraVariableCost`, and `extraUnits`.
+
+## Scroll motion and pie charts
+
+Cards, page titles, filters, table rows and chart legends fade/slide into view and fade out after leaving the viewport, repeating when scrolling back. An IntersectionObserver is disconnected and rebuilt on each render. Reduced-motion preferences and print mode show all content without motion; focused controls remain visible. Unsupported observers leave content visible.
+
+Agent performance includes a pie chart of placed orders by agent. Menu performance includes a pie chart of booked value by category (all categories for context). Both follow dates, branch and order type; legends show exact values and percentages with accessible chart summaries in EN/AR. Zero totals use a neutral circle.
