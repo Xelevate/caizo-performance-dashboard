@@ -65,3 +65,13 @@ Checked on 24 September 2026. Seven distinct Maps listings were found; this does
 - [New Giza · The Garden](https://www.google.com/maps/place/Caizo+The+garden+New+Giza+club/data=!4m7!3m6!1s0x14585b00678d9275:0x37c2e08a1a260d0d!8m2!3d30.0045566!4d31.0653991!16s%2Fg%2F11vs51pkk_!19sChIJdZKNZwBbWBQRDQ0mGorgwjc): The Garden, New Giza Club, First 6th of October, Giza · 2338+V59.
 - [Sheikh Zayed](https://www.google.com/maps/place/Caizo/data=!4m7!3m6!1s0x14585700790322e7:0xf4888cd4b8ace7f3!8m2!3d30.0098593!4d30.985134!16s%2Fg%2F11x7x0x0xp!19sChIJ5yIDeQBXWBQR8-esuNSMiPQ): First Al Sheikh Zayed, Giza · 2X5M+XWF.
 - [North Coast · Northed](https://www.google.com/maps/place/Caizo/data=!4m7!3m6!1s0x145ffb2f09dd44ef:0xe54f23096a0a07c1!8m2!3d30.931351!4d28.7927467!16s%2Fg%2F11s43q227d!19sChIJ70TdCS_7XxQRwQcKagkjT-U): NORTHED | ZAHRA, El Alamein, Marsa Matrouh · WQMR+CRQ.
+
+## Agent upsell
+
+The Agent performance page includes offers made, accepted offers, acceptance rate, completed upsells, extra sandwiches, incremental revenue, and estimated incremental contribution by agent, plus sample order evidence and agent detail metrics. All date, branch and order-type filters apply.
+
+The illustrative offer changes one shawarma (EGP 90) to two for EGP 170. Assumed variable cost is EGP 45 per sandwich. Incremental revenue is EGP 80 and estimated extra contribution is EGP 35. This is not verified profit or net profit. Confirm offer prices and variable costs before production.
+
+Only explicitly attributed offer events count; normal multiple-item orders do not. Offers/acceptances include all order statuses; revenue, costs, units and contribution count only completed accepted upsells. The final item lines are repriced to EGP 85 each and reconcile with final order values across all dashboard views.
+
+Future form fields: offer ID, agent ID, offer proposed (boolean), customer accepted (boolean), original basket snapshot/value, final basket snapshot/value after offer discounts, incremental units and incremental variable cost. Preserve order status and link the event to the order. Do not infer upselling from basket size alone. `orders[].upsell` stores `offered`, `accepted`, `offerId`, `originalValue`, `finalValue`, `extraRevenue`, `extraVariableCost`, and `extraUnits`.
