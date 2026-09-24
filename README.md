@@ -5,8 +5,8 @@ A meeting-ready English/Arabic dashboard demo with an owner overview and left-si
 ## Included
 
 - 30 days of reproducible sample calls and itemized orders, ending 24 September 2026.
-- 15 placeholder branches and eight fictional agents. The actual branch count is **not verified**.
-- Daily/hourly call and order charts; order type, period and branch filters.
+- Seven real Google Maps branch locations and eight fictional agents. This is **not a confirmed complete branch list**; performance remains fictional.
+- Daily/hourly call and order charts; order type and branch filters; preset periods and start/end calendars with inclusive custom date ranges.
 - Agent conversion, handling time and recorded correction rate; branch completion and cancellation metrics; item and category sales.
 - Click an agent, branch or item for detail. EN / AR changes text, entity names, number formatting and reading direction; the sidebar remains on the left as requested.
 - Caizo logo supplied by the user. Xelevate presentation branding.
@@ -15,7 +15,7 @@ A meeting-ready English/Arabic dashboard demo with an owner overview and left-si
 
 This is not connected to Google Forms, Google Sheets, a telephone system or Caizo production data. No customer information is collected. Revenue shown is booked order value, not profit or proven ROI. Cancelled orders remain in booked value; completed value only includes completed orders.
 
-The 24 representative menu items and illustrative prices were informed by [this public Caizo menu listing](https://directory.ordegate.com/directory/page/caizo?lang=ar), reviewed on 24 September 2026. This is not a verified complete/current menu. Confirm the official menu, branch list, prices and translations with the owner before production. Ambiguous menu entries were omitted. A multipack counts as one sold unit.
+The 24 representative menu items and illustrative prices were informed by [this public Caizo menu listing](https://directory.ordegate.com/directory/page/caizo?lang=ar), reviewed on 24 September 2026. This is not a verified complete/current menu. Confirm the official menu, full branch list, operating status, prices and translations with the owner before production. Ambiguous menu entries were omitted. A multipack counts as one sold unit.
 
 ## Metrics
 
@@ -49,3 +49,19 @@ Use a call form/log for **every call**, including missed calls, and a linked ord
 ## Hosting
 
 For GitHub Pages, serve the `main` branch root. The static files are `index.html`, `styles.css`, `app.js`, and `logo.webp`. Google Fonts are optional; system fallbacks work offline. There are no application dependencies and no credentials in the client.
+
+## Calendar date ranges
+
+Use the From and To calendars, then Apply range. Both endpoints are included. The demo supports 26 August through 24 September 2026. Missing dates, reversed ranges and dates outside this interval are rejected. Presets reset the dates; a one-day range shows hourly demand for that specific day. All pages and detail panels share the same range.
+
+## Google Maps branch locations
+
+Checked on 24 September 2026. Seven distinct Maps listings were found; this does not establish the complete network or current operating hours. Map links appear in Branch performance and branch details. Names and addresses are localized into English and Arabic. The North Coast location is inside NORTHED | ZAHRA. A separate Mountain View outlet mentioned in a third-party directory was not independently verified in Maps and is not included.
+
+- [Maadi · The Field](https://www.google.com/maps/place/Caizo+-+The+Field/data=!4m7!3m6!1s0x14583900040ff847:0x1954d5510a8f72aa!8m2!3d29.9602594!4d31.2708832!16s%2Fg%2F11wc1_nctt!19sChIJR_gPBAA5WBQRqnKPClHVVBk): Victoria Square, Maadi as Sarayat Al Gharbeyah, Cairo.
+- [New Cairo · Platz](https://www.google.com/maps/place/Caizo/data=!4m7!3m6!1s0x14583d9de7c015ed:0xdb90cc509985eb81!8m2!3d30.021961!4d31.4449019!16s%2Fg%2F11lsnlfzny!19sChIJ7RXA5509WBQRgeuFmVDMkNs): Platz, behind Petrosport Stadium, New Cairo.
+- [Ring Road · Chill Out](https://www.google.com/maps/place/Caizo+chill+out+ring+road/data=!4m7!3m6!1s0x14583def7f65534b:0x27d69a7cdf98962a!8m2!3d30.0156983!4d31.3999306!16s%2Fg%2F11t3tyxw54!19sChIJS1Nlf-89WBQRKpaY33ya1ic): Chill Out, Ring Road, 90th Street Bridge, New Cairo.
+- [Nasr City · Park View](https://www.google.com/maps/place/Caizo+-+Park+view/data=!4m7!3m6!1s0x14583f032181a3e5:0x2dbae27015dc8b2d!8m2!3d30.0630403!4d31.3488338!16s%2Fg%2F11sbst3r0t!19sChIJ5aOBIQM_WBQRLYvcFXDiui0): Child Garden, Park View, Ahmed Fakhry Street, Nasr City.
+- [New Giza · The Garden](https://www.google.com/maps/place/Caizo+The+garden+New+Giza+club/data=!4m7!3m6!1s0x14585b00678d9275:0x37c2e08a1a260d0d!8m2!3d30.0045566!4d31.0653991!16s%2Fg%2F11vs51pkk_!19sChIJdZKNZwBbWBQRDQ0mGorgwjc): The Garden, New Giza Club, First 6th of October, Giza · 2338+V59.
+- [Sheikh Zayed](https://www.google.com/maps/place/Caizo/data=!4m7!3m6!1s0x14585700790322e7:0xf4888cd4b8ace7f3!8m2!3d30.0098593!4d30.985134!16s%2Fg%2F11x7x0x0xp!19sChIJ5yIDeQBXWBQR8-esuNSMiPQ): First Al Sheikh Zayed, Giza · 2X5M+XWF.
+- [North Coast · Northed](https://www.google.com/maps/place/Caizo/data=!4m7!3m6!1s0x145ffb2f09dd44ef:0xe54f23096a0a07c1!8m2!3d30.931351!4d28.7927467!16s%2Fg%2F11s43q227d!19sChIJ70TdCS_7XxQRwQcKagkjT-U): NORTHED | ZAHRA, El Alamein, Marsa Matrouh · WQMR+CRQ.
