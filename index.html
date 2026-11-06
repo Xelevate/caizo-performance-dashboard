@@ -1,2 +1,22 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#151816"><title>Caizo × Xelevate | Performance Studio</title><meta name="description" content="A bilingual demonstration of Caizo call center, branch and menu performance, by Xelevate."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151816'/%3E%3Ctext x='32' y='47' text-anchor='middle' fill='%23cefa69' font-family='Arial' font-size='46' font-weight='900'%3EC%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head><body><div id="app"></div><dialog id="detail"></dialog></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAIZO | Customer Experience Intelligence</title>
+<link rel="stylesheet" href="./dashboard.css">
+<script type="module" src="./dashboard.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to dashboard</a>
+<aside><a class="brand" href="#overview">CAIZO<span>Customer Experience Intelligence</span></a><nav aria-label="Dashboard pages" id="nav"></nav><small>Powered by Xelevate</small></aside>
+<div class="workspace">
+<header><div><span class="dot" id="dot"></span><strong role="status" id="connection">Checking…</strong><span id="countdown" aria-live="off"></span><small id="freshness"></small></div><button id="refresh">Refresh now</button></header>
+<main id="main">
+<section class="hero" aria-live="polite" id="hero"></section>
+<section id="filters" aria-label="Filters"></section>
+<p id="notice" role="status"></p>
+<section id="content" aria-label="Analytics"></section>
+</main>
+</div>
+</body></html>
